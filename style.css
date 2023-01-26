@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-color: rgba(224, 232, 255, 1); 
+}
+
+
+.main{
+    height: 97vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card{
+    width: 327px;
+    height: 567px;
+    background-color: white;
+    border-radius: 20px;   
+}
+
+.main-img{
+    width: 328px;
+    height: 160px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;    
+}
+
+.title{
+    font-family: Red Hat Display;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 29.11px;
+    color: rgba(31, 46, 85, 1);
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    
+}
+
+.description{
+    font-family: Red Hat Display;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: rgba(113, 127, 166, 1);
+    text-align: center;
+    margin: 0 32px 0 32px;
+}
+
+
+.icon-music{
+    width: 48px;
+    height: 48px;
+}
+
+.icon-plan-price-change{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 41px 40px 0px 40px;
+    position: relative;
+}
+
+.plan-price{
+    position: absolute;
+    left: 68px;
+    
+}
+
+
+.plan{
+    font-family: Red Hat Display;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 18.52px;
+    color: rgba(31, 46, 85, 1);
+}
+
+.price{
+    font-family: Red Hat Display;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18.52px;
+    color: rgba(113, 127, 166, 1);    
+}
+
+.change{
+    font-family: Red Hat Display;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 17.2px;
+    color: rgba(56, 42, 225, 1);
+    transition: ease-in-out 0.3s;    
+}
+
+.change:hover{
+    color: rgba(118, 108, 241, 1);
+    text-decoration: none;
+} 
+
+.checkout-cancel{
+    display: grid;
+}
+
+.payment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Red Hat Display;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 19.85px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(56, 42, 225, 1);  
+    margin: 40px 24px 0 24px;
+    padding: 15px 0;
+    border-radius:11px;
+    text-decoration: none;
+    margin-bottom: 39px; 
+    transition: ease-in-out 0.3s;
+}
+
+
+.payment:hover{
+    background-color: rgba(118, 108, 241, 1);
+}
+
+.cancel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Red Hat Display;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 19.85px;
+    color: rgba(113, 127, 166, 1);
+    margin: 0 115px 32px 115px;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+}
+
+.cancel:hover{
+    color: rgba(31, 46, 85, 1);
+}
+
+
+.author{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Red Hat Display;
+    font-weight: 400;
+    font-size: 9px;
+}
+
+.mentor{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: Red Hat Display;
+    font-weight: 900;
+    transition: ease-in-out 0.3s;
+}
+
+.author-name{
+    margin-left: 5px;
+    font-family: Red Hat Display;
+    font-weight: 900;
+    transition: ease-in-out 0.3s;
+}
+
+.author-name:hover{
+    text-decoration: none;
+    color: rgb(106, 95, 230);
+}
+
+.mentor:hover{
+    text-decoration: none;
+    color: rgb(106, 95, 230);    
+}
+
+
+@media screen and (min-width: 376px){
+    .card{
+        width: 450px;
+        height: 697px;
+    }
+    
+    .main-img{
+        width: 450px;
+        height: 220px;    
+    }
+
+    .title{
+        font-family: Red Hat Display;
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 37.04px;
+    }
+    
+    .description{
+        padding-left: 35px;
+        padding-right: 35px;
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 45px;
+    }
+
+    .icon-plan-price-change{
+        margin: 45px 72px 30px 72px;
+    }
+
+    .plan{
+        font-size: 16px;
+        line-height: 21.17px;
+    }
+
+    .price{
+      font-size: 16px;
+      line-height: 21.17px;  
+    }
+
+    .change{
+        font-size: 14px;
+    }
+
+    .payment{
+        padding-left: 102px;
+        padding-right: 102px;
+        margin-left: 48px;
+        margin-right: 48px;
+    }
+
+    .author{
+        font-size: 15px;
+    }
+}
+
